@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    image: rahamshaik/paycric:v1
+    ports:
+      - "8006:80"
+    deploy:
+      replicas: 3
+  web2:
+    image: rahamshaik/paytrain:v1
+    ports:
+      - "8007:80"
+    deploy:
+      replicas: 3
